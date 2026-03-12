@@ -17,8 +17,8 @@ Global $g_hCurrentText = GUICtrlCreateLabel("Current: N/A", 70, 110, 130, 20)
 Global $g_hCurrentCoord = GUICtrlCreateLabel("X: , Y:", 70, 130, 130, 20)
 
 ; buttons
-Global $g_hExitBtn = GUICtrlCreateButton("Exit", 10, 10, 60, 30)
-Global $g_hToggleBtn = GUICtrlCreateButton("Start", 80, 10, 60, 30)
+Global $g_hExitBtn = GUICtrlCreateButton("Exit (F6)", 10, 10, 60, 30)
+Global $g_hToggleBtn = GUICtrlCreateButton("Start (F9)", 80, 10, 60, 30)
 
 ; helper to update the preview boxes
 Func UpdateExpected($color, $x, $y)

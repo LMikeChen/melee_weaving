@@ -9,6 +9,7 @@ Global $TIMEOUT_RUN_BACK_TO_SHORT_RANGE = 1000
 HotKeySet("{F8}", "steadyShotMeleeWeaving")
 HotKeySet("{F7}", "meleeWeaving")
 HotKeySet("{F6}", "ExitScript")
+HotKeySet("{F9}", "ToggleListening")
 
 Global $listening = False
 
@@ -16,10 +17,10 @@ Global $listening = False
 Func ToggleListening()
     $listening = Not $listening
     If $listening Then
-        GUICtrlSetData($g_hToggleBtn, "Stop")
+        GUICtrlSetData($g_hToggleBtn, "Stop (F9)")
         _Log("Hotkey listening started")
     Else
-        GUICtrlSetData($g_hToggleBtn, "Start")
+        GUICtrlSetData($g_hToggleBtn, "Start (F9)")
         _Log("Hotkey listening stopped")
     EndIf
 EndFunc
